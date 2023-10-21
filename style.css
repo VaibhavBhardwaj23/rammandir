@@ -132,11 +132,12 @@ main {
   width: 90%;
   margin: 8% auto;
   display: flex;
-  align-items: start;
+  align-items: center;
+  flex-direction: column;
 }
 .rama_image {
   width: 40%;
-  display: none;
+  /* display: none; */
 }
 .rama_image img {
   width: 100%;
@@ -335,6 +336,13 @@ main {
 .recent_posts {
   padding: 1em;
 }
+.links
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 @media screen and (min-width: 699px) {
   .hero_text {
@@ -361,6 +369,11 @@ main {
   }
   .hero_text {
     max-width: 40%;
+  }
+  .section_2 
+  {
+ flex-direction: row;
+ align-items: start;
   }
   .hero_image {
     width: 50%;
